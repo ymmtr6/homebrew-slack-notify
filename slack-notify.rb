@@ -13,7 +13,18 @@ class SlackNotify < Formula
     bin.install "bin/slack-notify"
   end
 
+  def caveats
+    msg = <<-EOF.undent
+    # slack-notify need Slack Incoming Webhook URL for working.
+    # Please set environment variable for POST REQUEST.
+    # (~/.bashrc, ~/.bash_profile, ~/.zshrc or other)
+
+    export SLACK_WEBHOOK="slack incomming webhook url"
+EOF
+  end
+
   test do
     system "false"
   end
+
 end
