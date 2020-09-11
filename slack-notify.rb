@@ -1,3 +1,5 @@
+require "formula"
+
 REPOSITORY_URL="https://github.com/ymmtr6/slack-notify".freeze
 HOMEBREW_SLACK_NOTIFY_VERSION="0.0.2".freeze
 
