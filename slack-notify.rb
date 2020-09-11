@@ -14,7 +14,7 @@ class SlackNotify < Formula
   end
 
   def caveats
-    msg = <<-EOS.undent
+    msg = <<-EOS
     # slack-notify need Slack Incoming Webhook URL for working.
     # Please set environment variable for POST REQUEST.
     # (~/.bashrc, ~/.bash_profile, ~/.zshrc or other)
