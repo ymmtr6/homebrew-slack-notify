@@ -20,6 +20,13 @@ class SlackNotify < Formula
     # (~/.bashrc, ~/.bash_profile, ~/.zshrc or other)
 
     export SLACK_WEBHOOK="slack incomming webhook url"
+
+    # USAGE: stdin
+    $ ls -la | slack-notify
+
+    # USAGE: args
+    $ slack-notify "this is test message"
+
     EOS
   end
 
