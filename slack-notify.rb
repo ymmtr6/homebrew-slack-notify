@@ -16,10 +16,13 @@ class SlackNotify < Formula
   def caveats
     msg = <<-EOS
     # slack-notify need Slack Incoming Webhook URL for working.
-    # Please set environment variable for POST REQUEST.
+    # Please set environment variable for POST REQUEST. 
     # (~/.bashrc, ~/.bash_profile, ~/.zshrc or other)
 
     export SLACK_WEBHOOK="slack incomming webhook url"
+
+    # please check the url to see for details. ( slack official page )
+    # https://slack.com/intl/ja-jp/help/articles/115005265063-Slack-%E3%81%A7%E3%81%AE-Incoming-Webhook-%E3%81%AE%E5%88%A9%E7%94%A8
 
     # USAGE: stdin
     $ ls -la | slack-notify
