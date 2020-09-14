@@ -1,5 +1,5 @@
 REPOSITORY_URL="https://github.com/ymmtr6/slack-notify".freeze
-HOMEBREW_SLACK_NOTIFY_VERSION="0.0.2".freeze
+HOMEBREW_SLACK_NOTIFY_VERSION="0.0.3".freeze
 
 class SlackNotify < Formula
   desc "Transfer stdin or argument using slack incomming webhook."
