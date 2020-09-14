@@ -1,12 +1,12 @@
 REPOSITORY_URL="https://github.com/ymmtr6/slack-notify".freeze
-HOMEBREW_SLACK_NOTIFY_VERSION="0.0.3".freeze
+HOMEBREW_SLACK_NOTIFY_VERSION="0.0.4".freeze
 
 class SlackNotify < Formula
   desc "Transfer stdin or argument using slack incomming webhook."
   homepage REPOSITORY_URL
   url "#{REPOSITORY_URL}/archive/#{HOMEBREW_SLACK_NOTIFY_VERSION}.tar.gz"
   version HOMEBREW_SLACK_NOTIFY_VERSION
-  sha256 "7694a667c407546324d2da9988317c5f5130a49bccd6ec3080d2061b7e22a98c"
+  sha256 "c297afbbd00546123b96b31b97439cc5ad31362beca8a6ee5913b1d738cc1be5"
   head "#{REPOSITORY_URL}.git", :tag => HOMEBREW_SLACK_NOTIFY_VERSION
 
   def install
